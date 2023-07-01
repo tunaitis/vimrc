@@ -52,5 +52,7 @@ require("telescope").setup({
 require'lspconfig'.html.setup{
 }
 
+require("mason").setup()
+
 vim.cmd [[colorscheme horizon]]
 
