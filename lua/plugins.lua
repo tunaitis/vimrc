@@ -62,5 +62,6 @@ return require('packer').startup(function(use)
 
   use 'nvim-treesitter/nvim-treesitter'
   use 'windwp/nvim-ts-autotag'
+  use 'm4xshen/autoclose.nvim'
 
 end)

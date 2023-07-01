@@ -64,5 +64,9 @@ require'nvim-treesitter.configs'.setup {
 	}
 }
 
+require'autoclose'.setup()
+
+
+
 vim.cmd [[colorscheme horizon]]
 
