@@ -3,7 +3,7 @@ vim.g.timeoutlen = 0
 
 vim.o.termguicolors = true
 vim.o.syntax = 'on'
-Gvim.o.errorbells = false
+vim.o.errorbells = false
 vim.o.smartcase = true
 vim.o.showmode = false
 vim.bo.swapfile = false
@@ -55,6 +55,13 @@ require'lspconfig'.html.setup{
 require("mason").setup()
 require("mason-lspconfig").setup {
      ensure_installed = { "html" },
+}
+
+require'nvim-treesitter.configs'.setup {
+	ensure_installed = { "lua", "html" },
+	autotag = {
+		enable = true
+	}
 }
 
 vim.cmd [[colorscheme horizon]]
