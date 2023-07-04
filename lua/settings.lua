@@ -24,3 +24,9 @@ vim.opt.shiftwidth = 2
 -- convert tab characters to spaces
 vim.opt.expandtab = true
 
+-- add the sign column
+vim.opt.signcolumn = 'yes'
+
+-- enable 24-bit RGB colors
+vim.opt.termguicolors = true
+
