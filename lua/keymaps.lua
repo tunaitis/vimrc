@@ -1,7 +1,7 @@
 -- set space as leader key
 vim.g.mapleader = ' '
 
--- make the which-key appear instantly
+-- make the which-key to appear instantly
 vim.o.timeoutlen = 0
 
 local wk = require("which-key")
