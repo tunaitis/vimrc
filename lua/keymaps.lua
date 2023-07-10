@@ -22,5 +22,5 @@ wk.register({
       r = { "<cmd>Telescope oldfiles<cr>", "Find Recent File" },
     },
   },
-  ["`"] = { "<cmd>BufferPick<cr>", "Pick Buffer" },
+  ["<tab>"] = { "<cmd>BufferPick<cr>", "Pick Buffer" },
 })
