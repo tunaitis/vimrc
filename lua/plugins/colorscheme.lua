@@ -5,7 +5,7 @@ return {
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       -- load the colorscheme here
-      -- vim.cmd([[colorscheme tokyonight]])
+      vim.cmd([[colorscheme tokyonight]])
     end,
   },
   {
@@ -14,7 +14,16 @@ return {
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       -- load the colorscheme here
-      vim.cmd([[colorscheme horizon]])
+      -- vim.cmd([[colorscheme horizon]])
+    end,
+  },
+  {
+    "rose-pine/neovim",
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      -- load the colorscheme here
+      --vim.cmd([[colorscheme rose-pine]])
     end,
   },
 }
