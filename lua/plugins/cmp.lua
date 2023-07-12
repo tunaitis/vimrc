@@ -10,14 +10,23 @@ return {
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-nvim-lua",
     "hrsh7th/cmp-nvim-lsp",
+    {
+      "L3MON4D3/LuaSnip",
+    }
   },
   config = function()
     vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
     local cmp = require('cmp')
 
+    local luasnip = require('luasnip')
     local select_opts = {behavior = cmp.SelectBehavior.Select}
 
     cmp.setup {
+      snippet = {
+        expand = function(args)
+          luasnip.lsp_expand(args.body)
+        end
+      },
       sources = {
         {name = 'path'},
         {name = 'nvim_lsp'},
@@ -45,6 +54,24 @@ return {
       mapping = {
         ['<Up>'] = cmp.mapping.select_prev_item(select_opts),
         ['<Down>'] = cmp.mapping.select_next_item(select_opts),
+        ['<C-p>'] = cmp.mapping.select_prev_item(select_opts),
+        ['<C-n>'] = cmp.mapping.select_next_item(select_opts),
+        ['<C-u>'] = cmp.mapping.scroll_docs(-4),
+        ['<C-d>'] = cmp.mapping.scroll_docs(4),
+        ['<C-Space>'] = cmp.mapping.complete(),
+        ['<C-e>'] = cmp.mapping.abort(),
+        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<Tab>'] = cmp.mapping(function(fallback)
+          local col = vim.fn.col('.') - 1
+
+          if cmp.visible() then
+            cmp.select_next_item(select_opts)
+          elseif col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') then
+            fallback()
+          else
+            cmp.complete()
+          end
+        end, {'i', 's'}),
       },
     }
 
