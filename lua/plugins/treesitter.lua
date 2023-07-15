@@ -5,7 +5,7 @@ return {
     build = ":TSUpdate",
     config = function()
       require("nvim-treesitter.configs").setup {
-        ensure_installed = { "lua", "go", "html" },
+        ensure_installed = { "lua", "go", "html", "css" },
         highlight = {
           enable = true,
         },

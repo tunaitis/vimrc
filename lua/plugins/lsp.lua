@@ -8,7 +8,7 @@ return {
   config = function()
     require("mason").setup {}
     require("mason-lspconfig").setup {
-      ensure_installed = { "lua_ls", "gopls", "html" },
+      ensure_installed = { "lua_ls", "gopls", "html", "cssls" },
     }
 
     local lspconfig = require("lspconfig")
@@ -27,6 +27,10 @@ return {
     capabilities.textDocument.completion.completionItem.snippetSupport = true
 
     lspconfig.html.setup {
+      capabilities = capabilities,
+    }
+
+    lspconfig.cssls.setup {
       capabilities = capabilities,
     }
   end,
