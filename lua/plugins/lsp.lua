@@ -28,6 +28,7 @@ return {
 
     lspconfig.html.setup {
       capabilities = capabilities,
+      filetypes = { "html", "jinja.html" },
     }
 
     lspconfig.cssls.setup {
