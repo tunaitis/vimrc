@@ -1,3 +1,7 @@
+-- disble netrw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 -- display line numbers in the gutter
 vim.opt.number = true
 
