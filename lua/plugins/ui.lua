@@ -25,6 +25,7 @@ return {
         sort_by = "case_sensitive",
         view = {
           width = 40,
+          side = "right",
         },
       }
     end,
