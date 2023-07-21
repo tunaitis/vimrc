@@ -9,7 +9,7 @@
   "cmp-nvim-lua": { "branch": "main", "commit": "f12408bdb54c39c23e67cab726264c10db33ada8" },
   "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },
   "gitsigns.nvim": { "branch": "main", "commit": "5a04466685008f29c71fa5ec25d421deb1c83fea" },
-  "horizon.nvim": { "branch": "master", "commit": "f7c758f0ebd47a72dd2832a8744340e72dad62f8" },
+  "horizon.nvim": { "branch": "main", "commit": "a0f83da967c7b84e85723a6672c94e9d1333b31e" },
   "lazy.nvim": { "branch": "main", "commit": "14d76aac4bd3ff07c1fca074c210f28f766a931e" },
   "lualine.nvim": { "branch": "master", "commit": "05d78e9fd0cdfb4545974a5aa14b1be95a86e9c9" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "828a538ac8419f586c010996aefa5df6eb7c250b" },

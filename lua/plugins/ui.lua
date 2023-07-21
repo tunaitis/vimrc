@@ -1,4 +1,9 @@
 return {
+  -- colorschemes
+  "folke/tokyonight.nvim",
+  "akinsho/horizon.nvim",
+  "rose-pine/neovim",
+
   {
     "nvim-lualine/lualine.nvim",
     dependencies = {

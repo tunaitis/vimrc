@@ -5,3 +5,5 @@ end
 require('settings')
 require('keymaps')
 require('plugin-manager')
+
+pcall(vim.cmd.colorscheme, 'horizon')
