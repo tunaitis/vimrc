@@ -5,6 +5,11 @@ return {
   "rose-pine/neovim",
 
   {
+    "akinsho/toggleterm.nvim",
+    config = true,
+  },
+
+  {
     "nvim-lualine/lualine.nvim",
     dependencies = {
       "nvim-tree/nvim-web-devicons"

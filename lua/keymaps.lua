@@ -11,6 +11,7 @@ wk.register({
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent" },
     e = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
     n = { "<cmd>enew<cr>", "New File" },
+    t = { "<cmd>ToggleTerm<cr>", "Terminal" },
     f = {
       name = "Find",
       f = { "<cmd>Telescope find_files<cr>", "Find File" },
