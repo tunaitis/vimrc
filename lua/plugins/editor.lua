@@ -4,6 +4,10 @@ return {
     "Glench/Vim-Jinja2-Syntax",
   },
 
+  {
+    "fatih/vim-go",
+  },
+
   -- treesitter and its plugins
   "windwp/nvim-ts-autotag",
   {
