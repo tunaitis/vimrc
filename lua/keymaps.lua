@@ -21,4 +21,8 @@ wk.register({
     },
   },
   ["<tab>"] = { "<cmd>BufferPick<cr>", "Pick Buffer" },
+  g = {
+    name = "Go to",
+    d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Go to definition" },
+  }
 })
