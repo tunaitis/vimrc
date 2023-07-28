@@ -8,6 +8,12 @@ return {
     "fatih/vim-go",
   },
 
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    opts = {}
+  },
+
   -- treesitter and its plugins
   "windwp/nvim-ts-autotag",
   {
