@@ -2,7 +2,16 @@ return {
   -- colorschemes
   "folke/tokyonight.nvim",
   "akinsho/horizon.nvim",
-  "rose-pine/neovim",
+  {
+    "rose-pine/neovim",
+    lazy = false,
+    config = function ()
+      require("rose-pine").setup {
+        variant = 'moon',
+        disable_italics = true,
+      }
+    end,
+  },
 
   {
     "akinsho/toggleterm.nvim",
