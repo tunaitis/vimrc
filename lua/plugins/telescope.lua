@@ -6,14 +6,31 @@ return {
       "nvim-lua/plenary.nvim",
     },
     config = function()
-      require("telescope").load_extension("file_browser")
+      local telescope = require("telescope")
+      telescope.setup {
+        pickers = {
+          find_files = {
+            theme = "dropdown",
+            previewer = false,
+          },
+          oldfiles = {
+            theme = "dropdown",
+            previewer = false,
+          },
+          buffers = {
+            theme = "dropdown",
+            previewer = false,
+          },
+        },
+      }
+      telescope.load_extension("file_browser")
     end,
   },
   {
     "nvim-telescope/telescope-file-browser.nvim",
-    dependencies = { 
-      "nvim-telescope/telescope.nvim", 
-      "nvim-lua/plenary.nvim" 
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim"
     },
   }
 }
