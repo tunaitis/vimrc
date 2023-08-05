@@ -5,6 +5,7 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
+    lazy = false,
     config = function()
       local telescope = require("telescope")
       telescope.setup {
@@ -20,6 +21,15 @@ return {
           buffers = {
             theme = "dropdown",
             previewer = false,
+            initial_mode = "normal",
+          },
+        },
+        extensions = {
+          file_browser = {
+            hijack_netrw = true,
+            theme = "dropdown",
+            previewer = false,
+            initial_mode = "normal",
           },
         },
       }
