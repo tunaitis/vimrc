@@ -9,7 +9,7 @@ wk.register({
     ["<leader>"] = { "<cmd>Telescope find_files<cr>", "Open File" },
     b = { "<cmd>Telescope buffers<cr>", "Switch Buffer" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent" },
-    e = { "<cmd>NvimTreeFocus<cr>", "Explorer" },
+    e = { "<cmd>Telescope file_browser<cr>", "Explorer" },
     n = { "<cmd>enew<cr>", "New File" },
     t = { "<cmd>ToggleTerm<cr>", "Terminal" },
     f = {
@@ -20,7 +20,7 @@ wk.register({
       r = { "<cmd>Telescope oldfiles<cr>", "Find Recent File" },
     },
   },
-  ["<tab>"] = { "<cmd>BufferPick<cr>", "Pick Buffer" },
+  ["<tab>"] = { "<cmd>Telescope buffers<cr>", "Pick Buffer" },
   g = {
     name = "Go to",
     d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Go to definition" },
