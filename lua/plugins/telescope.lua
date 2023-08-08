@@ -22,6 +22,8 @@ return {
             theme = "dropdown",
             previewer = false,
             initial_mode = "normal",
+            ignore_current_buffer = true,
+            sort_lastused = true,
           },
         },
         extensions = {
