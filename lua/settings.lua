@@ -34,3 +34,5 @@ vim.opt.signcolumn = 'yes'
 -- enable 24-bit RGB colors
 vim.opt.termguicolors = true
 
+-- enable relative line numbers
+vim.wo.relativenumber = true
