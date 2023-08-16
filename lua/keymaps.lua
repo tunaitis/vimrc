@@ -12,6 +12,7 @@ wk.register({
     e = { "<cmd>Telescope file_browser<cr>", "Explorer" },
     n = { "<cmd>enew<cr>", "New File" },
     t = { "<cmd>ToggleTerm<cr>", "Terminal" },
+    x = { "<cmd>Trouble<cr>", "Trouble" },
     f = {
       name = "Find",
       f = { "<cmd>Telescope find_files<cr>", "Find File" },
@@ -24,8 +25,5 @@ wk.register({
   g = {
     name = "Go to",
     d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Go to definition" },
-  },
-  x = {
-    x = { "<cmd>TroubleToggle<cr>",  "Trouble Toggle" },
   },
 })
