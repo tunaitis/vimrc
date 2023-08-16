@@ -24,5 +24,8 @@ wk.register({
   g = {
     name = "Go to",
     d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Go to definition" },
-  }
+  },
+  x = {
+    x = { "<cmd>TroubleToggle<cr>",  "Trouble Toggle" },
+  },
 })
