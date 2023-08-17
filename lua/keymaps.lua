@@ -12,7 +12,7 @@ wk.register({
     e = { "<cmd>Telescope file_browser<cr>", "Explorer" },
     n = { "<cmd>enew<cr>", "New File" },
     t = { "<cmd>ToggleTerm<cr>", "Terminal" },
-    x = { "<cmd>Trouble<cr>", "Trouble" },
+    d = { "<cmd>Telescope diagnostics<cr>", "Diagnostics" },
     f = {
       name = "Find",
       f = { "<cmd>Telescope find_files<cr>", "Find File" },
