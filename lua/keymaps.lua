@@ -13,6 +13,7 @@ wk.register({
     n = { "<cmd>enew<cr>", "New File" },
     t = { "<cmd>ToggleTerm<cr>", "Terminal" },
     d = { "<cmd>Telescope diagnostics<cr>", "Diagnostics" },
+    h = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Hover" },
     f = {
       name = "Find",
       f = { "<cmd>Telescope find_files<cr>", "Find File" },
@@ -27,5 +28,4 @@ wk.register({
     d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Go to Definition" },
     e = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "Go to Error" },
   },
-  K = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Hover" },
 })
