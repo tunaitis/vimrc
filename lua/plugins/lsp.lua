@@ -38,5 +38,18 @@ return {
     lspconfig.tsserver.setup {
       capabilities = capabilities,
     }
+
+    -- turn on borders for the hover window
+    vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+      vim.lsp.handlers.hover, {
+        border = "rounded",
+      }
+    )
+
+    require('lspconfig.ui.windows').default_options = {
+      border = "rounded",
+    }
+
+
   end,
 }
