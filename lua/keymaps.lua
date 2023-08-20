@@ -27,4 +27,5 @@ wk.register({
     d = { "<cmd>lua vim.lsp.buf.definition()<cr>", "Go to definition" },
   },
   K = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Hover" },
+  ["]"] = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "Go to Next Error" },
 })
