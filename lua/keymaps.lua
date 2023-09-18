@@ -10,6 +10,7 @@ wk.register({
     b = { "<cmd>Telescope buffers<cr>", "Switch Buffer" },
     r = { "<cmd>Telescope oldfiles<cr>", "Open Recent" },
     e = { "<cmd>Telescope file_browser<cr>", "Explorer" },
+    p = { "<cmd>Telescope project<cr>", "Projects" },
     n = { "<cmd>enew<cr>", "New File" },
     t = { "<cmd>ToggleTerm<cr>", "Terminal" },
     d = { "<cmd>Telescope diagnostics<cr>", "Diagnostics" },
