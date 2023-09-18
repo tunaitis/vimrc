@@ -22,19 +22,6 @@ return {
   },
 
   {
-    "ahmedkhalf/project.nvim",
-    opts = {
-
-    },
-    config = function()
-      require("project_nvim").setup {
-      }
-
-      require('telescope').load_extension('projects')
-    end,
-  },
-
-  {
     "nvim-lualine/lualine.nvim",
     dependencies = {
       "nvim-tree/nvim-web-devicons"
