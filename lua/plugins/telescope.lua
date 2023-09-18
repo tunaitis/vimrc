@@ -38,6 +38,11 @@ return {
             previewer = false,
             initial_mode = "normal",
           },
+          project = {
+            theme = "dropdown",
+            previewer = false,
+            initial_mode = "normal",
+          },
         },
       }
       telescope.load_extension("file_browser")
