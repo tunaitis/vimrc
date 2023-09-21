@@ -41,7 +41,7 @@ return {
         },
       }
       telescope.load_extension("file_browser")
-      telescope.load_extension("project")
+      -- telescope.load_extension("project")
     end,
   },
   {
@@ -53,5 +53,6 @@ return {
   },
   {
     "nvim-telescope/telescope-project.nvim",
+    enabled = false,
   },
 }
